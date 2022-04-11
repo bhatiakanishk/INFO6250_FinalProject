@@ -5,15 +5,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
+        <title>Flight Booking</title>
     </head>
 
-    <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
-        <p><i>To display a different welcome page for this project, modify</i>
-            <tt>index.jsp</tt> <i>, or create your own welcome page then change
-                the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
-                welcome page and also update the welcome-file setting in</i>
-            <tt>web.xml</tt>.</p>
+    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Welcome to Flight Booking</h1>
+        <a href="userRegistration.htm" style="font-size: 25px; text-decoration: none">User Registration</a><br><br>
+        <a href="userLogin.htm" style="font-size: 25px; text-decoration: none">User Login</a><br><br>
+        <a href="adminLogin.htm" style="font-size: 25px; text-decoration: none">Admin Login</a>
     </body>
+
 </html>
