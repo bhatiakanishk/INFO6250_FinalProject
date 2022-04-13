@@ -16,7 +16,7 @@
         <a href="bookTicket.htm" style="font-size: 25px; text-decoration: none">Book Tickets</a></br>
         <a href="viewAllBookings.htm" style="font-size: 25px; text-decoration: none">Show All Bookings</a></br>
         <a href="deleteTicket.htm" style="font-size: 25px; text-decoration: none">Delete Booking</a></br></br></br>
-        <a href="trainDetails.htm" style="font-size: 25px; text-decoration: none">Update Booking</a></br>
+        <a href="flightDetails.htm" style="font-size: 25px; text-decoration: none">Update Booking</a></br>
         <a href="updateUser1.htm" style="font-size: 25px; text-decoration: none">Update Account</a></br>
         <a href="closeAccount.htm" style="font-size: 25px; text-decoration: none">Close Account</a></br>
         <a href="logout.htm" style="font-size: 25px; text-decoration: none">Logout</a> 
