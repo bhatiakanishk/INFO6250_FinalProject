@@ -11,7 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>User Deleted Successfully</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">User Deleted Successfully</h1>
+        </br>
+        <a href="index.htm"> Home Page </a> </br>  
+        </br>
+        <a href="userRegister.htm"> Register </a>
+        </br>
     </body>
 </html>
