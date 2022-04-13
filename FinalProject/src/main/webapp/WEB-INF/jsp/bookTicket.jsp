@@ -18,7 +18,7 @@
             <table>
 		<tr>
 		    <td>Train No:</td>
-		    <td><form:input path="trainNo" size="30" /> <font color="red"><form:errors path="trainNo"/></font></td>
+		    <td><form:input path="flightNo" size="30" /> <font color="red"><form:errors path="flightNo"/></font></td>
 		</tr>
 		
 		<tr>
