@@ -17,7 +17,7 @@
         <form:form modelAttribute="ticket">
             <table>
 		<tr>
-		    <td>Train No:</td>
+		    <td>Flight No:</td>
 		    <td><form:input path="flightNo" size="30" /> <font color="red"><form:errors path="flightNo"/></font></td>
 		</tr>
 		
@@ -41,7 +41,6 @@
 		    <td><form:input path="email" size="30" /> <font color="red"><form:errors path="email"/></font></td>
 		</tr>
                 
-		
 		<tr>
 		    <td colspan="2"><input type="submit" value="Book Ticket" /></td>
 		</tr>

@@ -29,8 +29,7 @@
 		<tr>
 		    <td colspan="2"><input type="submit" value="Login" /></td>
 		</tr>
-	</table>
-	<br>
-            </form:form>
+	</table><br>
+        </form:form>
     </body>
 </html>

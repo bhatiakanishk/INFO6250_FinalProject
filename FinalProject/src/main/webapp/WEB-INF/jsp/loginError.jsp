@@ -16,6 +16,6 @@
         <b>Login Failed!!</b>
        	<br>Please try again<br>
         <br>
-        <a href="index.htm"> Login </a> 
+        <a href="index.htm" style="font-size: 25px; text-decoration: none">Login Page</a> 
     </body>
 </html>
