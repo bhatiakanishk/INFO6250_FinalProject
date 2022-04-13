@@ -14,11 +14,11 @@
     </head>
     <body>
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Add New Flight Data</h1>
-        <form:form modelAttribute="train">
+        <form:form modelAttribute="flight">
             <table>
                 <tr>
                     <td>Flight Number:</td>
-                    <td><form:input path="trainNo" size="30" /> <font color="red"><form:errors path="trainNo"/></font></td>
+                    <td><form:input path="flightNo" size="30" /> <font color="red"><form:errors path="flightNo"/></font></td>
                 </tr>
 
                 <tr>
