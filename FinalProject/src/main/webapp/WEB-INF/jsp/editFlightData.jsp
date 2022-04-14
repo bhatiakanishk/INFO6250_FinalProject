@@ -38,7 +38,7 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><input type="submit" value="Add Train Details" /></td>
+                    <td colspan="2"><input type="submit" value="Add Flight Details" /></td>
                 </tr>
             </table>
             <br>
