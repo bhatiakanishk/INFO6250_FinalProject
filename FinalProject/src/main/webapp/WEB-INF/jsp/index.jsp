@@ -10,7 +10,7 @@
 
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Welcome to Flight Booking</h1>
-        <a href="userRegistration.htm" style="font-size: 25px; text-decoration: none">User Registration</a><br><br>
+        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">User Registration</a><br><br>
         <a href="userLogin.htm" style="font-size: 25px; text-decoration: none">User Login</a><br><br>
         <a href="adminLogin.htm" style="font-size: 25px; text-decoration: none">Admin Login</a>
     </body>
