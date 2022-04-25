@@ -18,7 +18,7 @@
             <table>
                 <tr>
                     <td>Enter PNR number to delete the ticket</td>
-                    <td><form:input path="PRN" size="30" /> <font color="red"><form:errors path="PRN"/></font></td>
+                    <td><form:input path="PNR" size="30" /> <font color="red"><form:errors path="PNR"/></font></td>
                 </tr>
 
                 <tr>
