@@ -24,7 +24,7 @@ public class TicketDao extends DAO{
         try {
             begin();
             Criteria crit = getSession().createCriteria(Ticket.class);
-            crit.add(Restrictions.eq("PRN", ticket.getPNR()));
+            crit.add(Restrictions.eq("PNR", ticket.getPNR()));
             
             Ticket checkTicket = (Ticket) crit.uniqueResult();
             commit();
