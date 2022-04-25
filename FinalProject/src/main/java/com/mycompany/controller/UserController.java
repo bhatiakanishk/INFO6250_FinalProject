@@ -122,7 +122,7 @@ public class UserController {
             return "flightError";
         } else {
             int num = (int) System.currentTimeMillis();
-//            int PRN = rand.nextInt((num) + 1);
+//            int PNR = rand.nextInt((num) + 1);
 
             ticket.setPNR(Math.abs(num));
             ticket.setDate(date);
