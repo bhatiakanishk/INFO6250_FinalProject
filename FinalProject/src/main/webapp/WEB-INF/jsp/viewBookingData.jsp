@@ -18,7 +18,7 @@
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">View All Booking Information</h1>
         <table border ="1" cellpadding="5" cellspacing="5">
             <tr>
-                <th>PRN.</th>
+                <th>PNR</th>
                 <th>date</th>
                 <th>adultCount</th>
                 <th>childCount</th>
@@ -29,7 +29,7 @@
             </tr>
             <c:forEach var="adv" items="${ticketList}">
                 <tr>
-                    <td>${adv.PRN}</td>
+                    <td>${adv.PNR}</td>
                     <td>${adv.date}</td>
                     <td>${adv.adultCount}</td>
                     <td>${adv.childCount}</td>
