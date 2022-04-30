@@ -33,7 +33,6 @@
 	<br>
             </form:form>
         </br>
-        <a href="index.htm" style="font-size: 25px; text-decoration: none">Home Page</a></br></br>
-        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">Register</a></br>
+        <a href="index.htm" style="font-size: 20px; text-decoration: none">Back to home page</a></br></br>
     </body>
 </html>

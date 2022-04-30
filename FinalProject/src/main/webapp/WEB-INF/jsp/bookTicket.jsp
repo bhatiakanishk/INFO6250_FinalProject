@@ -12,8 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Book Tickets</title>
     </head>
-    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
-        <h1>Book Tickets</h1>
+    <body style="font-family:Consolas, 'Courier New', monospace" align="left">
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Book Tickets</h1>
         <form:form modelAttribute="ticket">
             <table>
 		<tr>
@@ -48,7 +48,7 @@
 	<br>
             </form:form>
         <br>
-        <a href="viewFlight.htm" style="font-size: 20px; text-decoration: none">View All Flight's Information</a><br><br>
-        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back</a></br></br>
+        <a href="viewFlight.htm" style="font-size: 20px; text-decoration: none">View all flights</a><br><br>
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to user home page</a></br></br>
     </body>
 </html>

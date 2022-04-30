@@ -14,7 +14,7 @@
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
         <h1>Ticket Deleted Successfully</h1>
         </br>
-        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">User Home Page</a></br></br>
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to user home page</a></br></br>
         </br>
     </body>
 </html>

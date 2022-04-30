@@ -24,8 +24,7 @@ public class TicketDao extends DAO{
         try {
             begin();
             Criteria crit = getSession().createCriteria(Ticket.class);
-            crit.add(Restrictions.eq("PNR", ticket.getPNR()));
-            
+            crit.add(Restrictions.eq("PNR", ticket.getPNR())); 
             Ticket checkTicket = (Ticket) crit.uniqueResult();
             commit();
             return checkTicket;
@@ -35,8 +34,6 @@ public class TicketDao extends DAO{
             throw new FlightException("Couldn't get flight: " + ticket.getPNR(), e);
         }
     }
-    
-        
 
     public Ticket create(Ticket ticket) throws FlightException {
         try {
@@ -67,7 +64,6 @@ public class TicketDao extends DAO{
             begin();
             Criteria crit = getSession().createCriteria(Ticket.class);
                         crit.add(Restrictions.eq("email", user.getEmail()));
-
             tickets = crit.list();
             commit();
             return tickets;

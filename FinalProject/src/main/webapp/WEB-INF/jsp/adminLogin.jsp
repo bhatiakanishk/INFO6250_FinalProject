@@ -31,5 +31,7 @@
 		</tr>
 	</table><br>
         </form:form>
+        <br>
+        <a href="index.htm" style="font-size: 25px; text-decoration: none">Home Page</a> 
     </body>
 </html>

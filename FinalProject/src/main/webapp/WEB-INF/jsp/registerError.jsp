@@ -14,6 +14,6 @@
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Register Error</h1>
         <h2 style="font-size: 30px" align="center"> Validation Error. Please check your age or Contact Number</h2>
-        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">Go Back to Register Page and Try Again.</a><br><br>
+        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">Back to Register Page</a><br><br>
     </body>
 </html>

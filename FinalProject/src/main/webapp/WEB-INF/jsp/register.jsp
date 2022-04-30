@@ -9,10 +9,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Register a New User</title>
+        <title>Register New User</title>
     </head>
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
-        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Register a New User</h1>
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Register New User</h1>
         <form:form modelAttribute="user">
 
             <table>
@@ -52,7 +52,7 @@
             </table>
             <br>
         </form:form>
-        <a href="userLogin.htm" style="font-size: 25px; text-decoration: none">Login</a></br></br>
+            <br>
         <a href="index.htm" style="font-size: 25px; text-decoration: none">Home Page</a> 
     </body>
 </html>

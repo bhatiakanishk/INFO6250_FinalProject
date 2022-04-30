@@ -20,6 +20,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
@@ -52,13 +54,25 @@ public class AdminController {
                 session.setAttribute("admin", retrievedAdmin);
                 status.setComplete();
                 ModelAndView model = new ModelAndView("adminWelcome");
+                model.setViewName("redirect:adminWelcome.htm");
                 return model;
             } else {
                 ModelAndView model = new ModelAndView("error");
                 return model;
             }
         }
+    }
+    
+    @RequestMapping(value = "/redirect1", method = RequestMethod.GET)
+    public String redirect() {
 
+        return "redirect:adminWelcome";
+    }
+    
+    @RequestMapping(value = "/adminWelcome", method = RequestMethod.GET)
+    public String adminWelcome() {
+
+        return "adminWelcome";
     }
 
     @GetMapping("createFlight.htm")

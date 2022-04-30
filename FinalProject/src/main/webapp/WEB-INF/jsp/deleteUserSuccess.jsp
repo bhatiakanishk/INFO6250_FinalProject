@@ -13,10 +13,6 @@
     </head>
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">User Deleted Successfully</h1>
-        </br>
-        <a href="index.htm" style="font-size: 25px; text-decoration: none">Home Page</a></br>  
-        </br>
-        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">Register</a>
-        </br>
+        <a href="adminWelcome.htm" style="font-size: 20px; text-decoration: none">Back to admin home page</a></br></br>
     </body>
 </html>

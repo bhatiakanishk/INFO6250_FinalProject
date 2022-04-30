@@ -12,12 +12,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Delete Flight Ticket</title>
     </head>
-    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
+    <body style="font-family:Consolas, 'Courier New', monospace" align="left">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Delete Flight Ticket</h1>
         <form:form modelAttribute="ticket">
             <table>
                 <tr>
-                    <td>Enter PNR number to delete the ticket</td>
+                    <td>Enter your PNR number:</td>
                     <td><form:input path="PNR" size="30" /> <font color="red"><form:errors path="PNR"/></font></td>
                 </tr>
 
@@ -27,7 +27,7 @@
             </table>
             <br>
         </form:form>
-        <a href="viewAllBookings.htm" style="font-size: 20px; text-decoration: none">Show All Bookings</a></br>    
-        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back</a></br></br>
+        <a href="viewAllBookings.htm" style="font-size: 20px; text-decoration: none">Show Tickets</a></br>    
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to home page</a></br></br>
     </body>
 </html>

@@ -77,7 +77,7 @@ public class UserController {
 
         return "redirect:userWelcome";
     }
-
+    
     @RequestMapping(value = "/userWelcome", method = RequestMethod.GET)
     public String userWelcome() {
 

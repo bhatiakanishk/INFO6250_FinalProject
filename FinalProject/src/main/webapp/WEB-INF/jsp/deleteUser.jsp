@@ -27,5 +27,7 @@
             </table>
             <br>
         </form:form>
+            <a href="viewAllUsers.htm" style="font-size: 25px; text-decoration: none">View All Users</a><br><br>
+            <a href="adminWelcome.htm" style="font-size: 20px; text-decoration: none">Back to admin home page</a></br></br>
     </body>
 </html>

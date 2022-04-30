@@ -14,15 +14,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>View All Booking Information</title>
     </head>
-    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
-        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">View All Booking Information</h1>
+    <body style="font-family:Consolas, 'Courier New', monospace" align="left">
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">View Tickets</h1>
         <table border ="1" cellpadding="5" cellspacing="5">
             <tr>
                 <th>PNR</th>
-                <th>date</th>
-                <th>adultCount</th>
-                <th>childCount</th>
-                <th>email</th>
+                <th>Date</th>
+                <th>Adult Count</th>
+                <th>Child Count</th>
+                <th>Email</th>
                 <th>Travel Date</th>
                 <th>Flight Number</th>
                 
@@ -40,6 +40,6 @@
             </c:forEach>
         </table>
         <br>
-        
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to home page</a>
     </body>
 </html>

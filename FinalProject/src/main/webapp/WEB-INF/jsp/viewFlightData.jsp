@@ -12,16 +12,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>View All Flight Information</title>
+        <title>View All Flight's Information</title>
     </head>
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">View All Flight Information</h1>
         <table border ="1" cellpadding="5" cellspacing="5">
             <tr>
-                <th>Flight No.</th>
+                <th>Flight Number</th>
                 <th>Source</th>
                 <th>Destination</th>
-                <th>Total Seats!</th>
+                <th>Total Seats</th>
             </tr>
             <c:forEach var="adv" items="${flightList}">
                 <tr>

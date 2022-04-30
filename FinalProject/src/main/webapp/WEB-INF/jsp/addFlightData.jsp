@@ -42,5 +42,6 @@
             </table>
             <br>
         </form:form>
+            <a href="adminWelcome.htm" style="font-size: 20px; text-decoration: none">Back to admin home page</a></br></br>
     </body>
 </html>

@@ -15,6 +15,6 @@
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Login Failed</h1>
         <h2>No such user/password combination</h2>
         <br>
-        <a href ="userLogin.htm" style="font-size: 25px; text-decoration: none">Login Page</a>
+        <a href ="userLogin.htm" style="font-size: 25px; text-decoration: none">Back to Login Page</a>
     </body>
 </html>
