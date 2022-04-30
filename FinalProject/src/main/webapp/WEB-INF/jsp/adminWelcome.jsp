@@ -16,7 +16,6 @@
         <a href="createFlight.htm" style="font-size: 25px; text-decoration: none">Add New Flight</a><br><br>
         <a href="viewFlight.htm" style="font-size: 25px; text-decoration: none">View All Flight's Information</a><br><br>
         <a href="editFlight.htm" style="font-size: 25px; text-decoration: none">Edit Flight's Information</a><br><br>
-        <a href="createFlight.htm" style="font-size: 25px; text-decoration: none">Add New Flight</a><br><br><br>
         <a href="viewAllUsers.htm" style="font-size: 25px; text-decoration: none">View All User's Information</a><br><br>
         <a href="updateUser.htm" style="font-size: 25px; text-decoration: none">Update User's Information</a><br><br>
         <a href="deleteUser.htm" style="font-size: 25px; text-decoration: none">Delete User's Account</a><br><br><br>
