@@ -10,10 +10,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Delete Flight</title>
+        <title>Delete Flight Ticket</title>
     </head>
     <body style="font-family:Consolas, 'Courier New', monospace" align="center">
-        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Delete Flight</h1>
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Delete Flight Ticket</h1>
         <form:form modelAttribute="ticket">
             <table>
                 <tr>
@@ -27,5 +27,7 @@
             </table>
             <br>
         </form:form>
+        <a href="viewAllBookings.htm" style="font-size: 20px; text-decoration: none">Show All Bookings</a></br>    
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back</a></br></br>
     </body>
 </html>

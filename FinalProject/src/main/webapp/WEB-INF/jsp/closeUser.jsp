@@ -12,12 +12,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Close Account</title>
     </head>
-    <body style="font-family:Consolas, 'Courier New', monospace" align="center">
-        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Would you like to close your account?</h1>
+    <body style="font-family:Consolas, 'Courier New', monospace" align="left">
+        <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">Close Account</h1>
         <form:form modelAttribute = "user">
             <table>
 		<tr>
-		    <td>Enter your email to confirm</td>
+		    <td>Enter your email to close the account:</td>
 		    <td><form:input path = "email" size = "30" /> <font color = "red"><form:errors path = "email"/></font></td>
 		</tr>
 
@@ -27,5 +27,6 @@
 	</table>
 	<br>
         </form:form>
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back</a></br></br>
     </body>
 </html>

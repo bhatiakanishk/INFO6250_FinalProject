@@ -39,9 +39,7 @@
                 </tr>
             </c:forEach>
         </table>
-        <%--<a href="javascript:history.back()">Go Back</a>
-        <button type="button" onclick="javascript:history.back()">Back</button> --%>
+        <br>
         
-        <button onclick="history.go(-1)">Go 2 pages back</button>
     </body>
 </html>
