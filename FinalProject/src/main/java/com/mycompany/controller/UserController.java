@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
@@ -39,11 +40,10 @@ public class UserController {
     // Login Page
     @GetMapping("userLogin.htm")
     public String showLoginForm(ModelMap model, User user) {
-        //User user = new User();
         model.addAttribute("user", user);
         return "loginPage";
     }
-
+    // Open user pages if user is verified
     @PostMapping("userLogin.htm")
     public ModelAndView handleLogin(@ModelAttribute("user") User user, BindingResult result, SessionStatus status, UserDao userdao, HttpSession session) throws FlightException {
 
@@ -51,20 +51,37 @@ public class UserController {
             ModelAndView model = new ModelAndView("register");
             return model;
         } else {
-
+            // Show Usser Welcome Page if user is valid
             User retrievedUser = userdao.get(user);
             System.out.println(retrievedUser);
             if (retrievedUser != null) {
                 session.setAttribute("user", retrievedUser);
                 status.setComplete();
                 ModelAndView model = new ModelAndView("userWelcome");
+                model.setViewName("redirect:userWelcome.htm");
                 return model;
+                // Show error page
             } else {
                 ModelAndView model = new ModelAndView("error");
                 return model;
             }
         }
+    }
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
 
+    @RequestMapping(value = "/redirect", method = RequestMethod.GET)
+    public String redirect() {
+
+        return "redirect:userWelcome";
+    }
+
+    @RequestMapping(value = "/userWelcome", method = RequestMethod.GET)
+    public String userWelcome() {
+
+        return "userWelcome";
     }
 
     @GetMapping("userRegister.htm")
@@ -117,13 +134,9 @@ public class UserController {
         if (result.hasErrors()) {
             return "bookTicket";
         } else if (ticket.getTravel_date().before(date)) {
-
-//        } else if(ticket.getTravel_date() < date){
             return "flightError";
         } else {
             int num = (int) System.currentTimeMillis();
-//            int PNR = rand.nextInt((num) + 1);
-
             ticket.setPNR(Math.abs(num));
             ticket.setDate(date);
             Ticket alreadyTicket = ticketDao.get(ticket);
@@ -151,7 +164,6 @@ public class UserController {
         if (result.hasErrors()) {
             return "closeUser";
         } else {
-//            String backEmail = user.getEmail();
             User alreadyUser = userDao.getforDelete(user);
             if (alreadyUser != null) {
                 userDao.delete(alreadyUser);
@@ -161,9 +173,7 @@ public class UserController {
                 model.addAttribute("flight", alreadyUser);
                 return "flightError";
             }
-
         }
-
     }
 
     @GetMapping("deleteTicket.htm")
@@ -204,8 +214,6 @@ public class UserController {
         } else {
 
             User alreadyUser = userDao.getforDelete(user);
-
-//            user.setId(alreadyUser.getId());
             if (alreadyUser != null) {
                 userDao.delete(alreadyUser);
                 userDao.create(user);
