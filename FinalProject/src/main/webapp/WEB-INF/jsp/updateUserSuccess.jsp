@@ -16,7 +16,5 @@
         </br>
         <a href="index.htm" style="font-size: 25px; text-decoration: none">Home Page</a></br>  
         </br>
-        <a href="userRegister.htm" style="font-size: 25px; text-decoration: none">Register</a>
-        </br>
     </body>
 </html>

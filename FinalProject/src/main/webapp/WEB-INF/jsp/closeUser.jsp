@@ -27,6 +27,6 @@
 	</table>
 	<br>
         </form:form>
-        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to user home page</a></br></br>
+        <a href="index.htm" style="font-size: 20px; text-decoration: none">Back to user home page</a></br></br>
     </body>
 </html>

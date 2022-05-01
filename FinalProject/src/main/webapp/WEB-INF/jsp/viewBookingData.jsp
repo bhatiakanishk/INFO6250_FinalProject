@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>View All Booking Information</title>
+        <title>View Tickets</title>
     </head>
     <body style="font-family:Consolas, 'Courier New', monospace" align="left">
         <h1 style="border-style:groove; border-color:black; font-size: 35px" align="center">View Tickets</h1>
@@ -40,6 +40,6 @@
             </c:forEach>
         </table>
         <br>
-        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to home page</a>
+        <a href="userWelcome.htm" style="font-size: 20px; text-decoration: none">Back to user home page</a>
     </body>
 </html>
