@@ -62,13 +62,13 @@ public class AdminController {
             }
         }
     }
-    
+
     @RequestMapping(value = "/redirect1", method = RequestMethod.GET)
     public String redirect() {
 
         return "redirect:adminWelcome";
     }
-    
+
     @RequestMapping(value = "/adminWelcome", method = RequestMethod.GET)
     public String adminWelcome() {
 

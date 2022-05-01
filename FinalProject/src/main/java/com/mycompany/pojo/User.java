@@ -12,43 +12,41 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 /**
  *
  * @author kanishk
  */
-
 @Entity
 @Table(name = "user")
 public class User {
-    
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     @Basic
     @Column(name = "email")
     private String email;
-    
+
     @Basic
-    @Column(name="pass")
+    @Column(name = "pass")
     private String pass;
-    
+
     @Basic
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
-    
+
     @Basic
-    @Column(name="gender")
+    @Column(name = "gender")
     private String gender;
-    
+
     @Basic
-    @Column(name="contactNo")
+    @Column(name = "contactNo")
     private double contactNo;
-    
+
     @Basic
-    @Column(name="age")
+    @Column(name = "age")
     private int age;
 
     public int getId() {
@@ -106,7 +104,8 @@ public class User {
     public void setAge(int age) {
         this.age = age;
     }
-    
-    public User(){}
-    
+
+    public User() {
+    }
+
 }

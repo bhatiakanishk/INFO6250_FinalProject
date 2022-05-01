@@ -43,6 +43,7 @@ public class UserController {
         model.addAttribute("user", user);
         return "loginPage";
     }
+
     // Open user pages if user is verified
     @PostMapping("userLogin.htm")
     public ModelAndView handleLogin(@ModelAttribute("user") User user, BindingResult result, SessionStatus status, UserDao userdao, HttpSession session) throws FlightException {
@@ -56,7 +57,7 @@ public class UserController {
             System.out.println(retrievedUser);
             if (retrievedUser != null) {
                 session.setAttribute("user", retrievedUser);
-                status.setComplete();
+                status.setComplete(); //Mark it complete
                 ModelAndView model = new ModelAndView("userWelcome");
                 model.setViewName("redirect:userWelcome.htm");
                 return model;
@@ -67,6 +68,7 @@ public class UserController {
             }
         }
     }
+
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index() {
         return "index";
@@ -77,7 +79,7 @@ public class UserController {
 
         return "redirect:userWelcome";
     }
-    
+
     @RequestMapping(value = "/userWelcome", method = RequestMethod.GET)
     public String userWelcome() {
 

@@ -16,21 +16,20 @@ import javax.persistence.Table;
  *
  * @author kanishk
  */
-
 //Admin POJO
 @Entity
 @Table(name = "admin")
 public class Admin {
-    
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     @Basic
     @Column(name = "email")
     private String email;
-    
+
     @Basic
     @Column(name = "pass")
     private String pass;
@@ -58,6 +57,7 @@ public class Admin {
     public void setPass(String pass) {
         this.pass = pass;
     }
-    
-    public Admin(){}
+
+    public Admin() {
+    }
 }

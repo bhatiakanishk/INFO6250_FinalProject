@@ -17,14 +17,16 @@ import org.hibernate.criterion.Restrictions;
  *
  * @author kanishk
  */
-public class TicketDao extends DAO{
-    public TicketDao(){}
-    
+public class TicketDao extends DAO {
+
+    public TicketDao() {
+    }
+
     public Ticket get(Ticket ticket) throws FlightException {
         try {
             begin();
             Criteria crit = getSession().createCriteria(Ticket.class);
-            crit.add(Restrictions.eq("PNR", ticket.getPNR())); 
+            crit.add(Restrictions.eq("PNR", ticket.getPNR()));
             Ticket checkTicket = (Ticket) crit.uniqueResult();
             commit();
             return checkTicket;
@@ -47,7 +49,7 @@ public class TicketDao extends DAO{
         }
     }
 
-    public void delete(Ticket ticket)  throws FlightException {
+    public void delete(Ticket ticket) throws FlightException {
         try {
             begin();
             getSession().delete(ticket);
@@ -57,13 +59,13 @@ public class TicketDao extends DAO{
             throw new FlightException("Could not delete user " + ticket.getPNR(), e);
         }
     }
-    
-        public List<Ticket> getAll(User user) throws FlightException {
+
+    public List<Ticket> getAll(User user) throws FlightException {
         List<Ticket> tickets = new ArrayList<Ticket>();
         try {
             begin();
             Criteria crit = getSession().createCriteria(Ticket.class);
-                        crit.add(Restrictions.eq("email", user.getEmail()));
+            crit.add(Restrictions.eq("email", user.getEmail()));
             tickets = crit.list();
             commit();
             return tickets;

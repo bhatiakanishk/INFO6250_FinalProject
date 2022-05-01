@@ -16,30 +16,29 @@ import javax.persistence.Table;
  *
  * @author kanishk
  */
-
 @Entity
 @Table(name = "flight")
 public class Flight {
-    
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     @Basic
     @Column(name = "flightNo")
     private int flightNo;
-    
+
     @Basic
     @Column(name = "source")
-    private String  source;
-    
+    private String source;
+
     @Basic
     @Column(name = "dest")
     private String dest;
-    
+
     @Basic
-    @Column(name="totalSeats")
+    @Column(name = "totalSeats")
     private int totalSeats;
 
     public int getId() {
@@ -81,6 +80,7 @@ public class Flight {
     public void setTotalSeats(int totalSeats) {
         this.totalSeats = totalSeats;
     }
-    
-    public Flight(){}
+
+    public Flight() {
+    }
 }

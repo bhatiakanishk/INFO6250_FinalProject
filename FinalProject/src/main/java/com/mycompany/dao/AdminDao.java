@@ -14,9 +14,11 @@ import org.hibernate.criterion.Restrictions;
  *
  * @author kanishk
  */
-public class AdminDao extends DAO{
-    public AdminDao(){}
-    
+public class AdminDao extends DAO {
+
+    public AdminDao() {
+    }
+
     public Admin get(Admin admin) throws FlightException {
         try {
             begin();

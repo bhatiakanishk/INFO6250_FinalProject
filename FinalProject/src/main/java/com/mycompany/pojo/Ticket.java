@@ -17,40 +17,39 @@ import javax.persistence.Table;
  *
  * @author kanishk
  */
-
 @Entity
 @Table(name = "ticket")
 public class Ticket {
-    
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     @Basic
     @Column(name = "date")
     private Date date;
-    
+
     @Basic
     @Column(name = "travel_date")
     private Date travel_date;
-    
+
     @Basic
     @Column(name = "PNR")
     private int PNR;
-    
+
     @Basic
     @Column(name = "adultCount")
     private int adultCount;
-    
+
     @Basic
     @Column(name = "childCount")
     private int childCount;
-    
+
     @Basic
     @Column(name = "email")
     private String email;
-    
+
     @Basic
     @Column(name = "flightNo")
     private String flightNo;
@@ -118,6 +117,7 @@ public class Ticket {
     public void setFlightNo(String flightNo) {
         this.flightNo = flightNo;
     }
-    
-    public Ticket(){}
+
+    public Ticket() {
+    }
 }

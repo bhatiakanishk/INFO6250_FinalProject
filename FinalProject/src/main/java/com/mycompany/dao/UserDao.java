@@ -16,7 +16,8 @@ import org.hibernate.criterion.Restrictions;
  *
  * @author kanishk
  */
-public class UserDao extends DAO{
+public class UserDao extends DAO {
+
     public UserDao() {
     }
 
